@@ -33,7 +33,7 @@ main
 {
     background-color: black;
 }
-.hed-line
+.hed_line
 {
     padding: 0 20%;
     color: rgba(150, 150, 150, 1);
@@ -42,42 +42,46 @@ main
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
-.top-line
+.top_line
 {
     letter-spacing: 1px;
     height: 44px;
     background-color: rgba(0, 0, 0, 1);
 }
-.top-line p
+.top_line p
 {
     margin-left: 15px;
 }
-.top-line *
+.top_line *
 {
     height: 16px;
 }
-.top-line p:first-of-type
+.top_line p:first-of-type
 {
     flex-grow: 2;
     align-self: left;
 }
-.second-line
+.top_line p:last-of-type:hover
+{
+    text-decoration: underline;
+}
+.second_line
 {
     height: 80px;
     background-color: rgba(15, 15, 15, 1);
 }
-.second-line p:first-of-type
+.second_line a:first-of-type
 {
     flex-grow: 1;
-    align-self: left;
     font-family: PostNoBillsJaffna-Bold;
     color: white;
     font-size: 36px;
     font-weight: 700;
-    line-height: 54px;
+    justify-content: flex-start;
 }
-.second-line a
+.second_line a
 {
     text-decoration: none; 
     color: rgba(150, 150, 150, 1);
@@ -87,18 +91,24 @@ main
     align-items: center;
     justify-content: center;
 }
-.second-line a:hover
+.second_line a:hover:not(a:first-of-type)
 {
     background-color: rgba(31, 31, 31, 1);
     color: white;
 }
-.second-line img
+.second_line a.hed_img_link
 {
-    height: 22px;
-    margin-left: 40px;
+    width: auto;
 }
-.first-screen
+.second_line img
 {
+    height: 20px;
+    margin: 30px 20px;
+}
+.first_screen
+{
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,23 +119,36 @@ main
     background-repeat: no-repeat;
     height: 850px;
 }
-.first-screen div
+.first_screen div
 {
     background: url("../img/icon/name_conpani.svg") center center;
     background-repeat: no-repeat;
+    background-size: 60%;
+    transition: background-size 0.5s ease-in-out;
     border: rgba(255, 255, 255, 1) solid;
     width: 320px;
     height: 320px;
     margin-bottom: 80px;
 }
-.first-screen p 
+.first_screen div:hover
 {
-    width: 730px;
+    background-size: 70%;
+}
+.first_screen p 
+{
+    width: 39%;
     height: 96px;
     font-family: PTSansRegular;
     text-transform: uppercase;
     color: white;
     text-align: center;
+}
+.main_blocks
+{  
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
 }
 .season_collection
 {
@@ -134,13 +157,6 @@ main
 }
 .season_collection > div:first-of-type
 {
-    display: inline-block;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-/*    background-color: rgba(0, 0, 0, 1);*/
-/*    background: none;*/
     width: 55%;
 }
 .season_collection_text
@@ -158,58 +174,60 @@ main
 {
     display: flex;
     list-style-type: none;
+    flex-wrap: wrap;
 }
 .season_collection > div:first-of-type ul li
 {
     margin: 0 25px;
 }
-.watch-collection
+.watch_collection
 {
     font-family: PlayfairDisplayRegular;
     color: white;
     width: 260px;
     height: 405px;
 }
-.watch-collection div
+.watch_collection div
 {
-    width: 260px;
+/*    width: 100%;*/
     height: 325px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(25, 27, 28, 1);
 }
-.watch-collection div img
+.watch_collection div img
 {
-    width: 215px;
+    width: 80%;
+    transition: width 0.5s ease;
     height: 215px;
 }
-.watch-collection p:first-of-type
+.watch_collection div img:hover
+{
+    width: 85%;
+}
+.watch_collection p:first-of-type
 {
     font-size: 18px;
     margin-top: 15px;
 }
-.watch-collection p:last-of-type
+.watch_collection p:last-of-type
 {
     margin-top: 15px;
     font-size: 16px;
 }
 .season_collection > div:last-of-type
 {
-    display: inline-block;
     background: url("../img/fons/Rectangle_8.png") center center;
     background-repeat: no-repeat;
     width: 45%;
-    display: flex;
-    flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
 }
 .season_collection > div:last-of-type hr
 {
     margin: 30px 0;
 }
-.season_collection > div:last-of-type button
+.season_collection_button
 {
     width: 138px;
     height: 47px;
@@ -220,4 +238,40 @@ main
     font-size: 18px;
     letter-spacing: 1px;
     margin-bottom: 100px;
+}
+.season_collection_button:hover
+{
+    background: rgba(255, 255, 255, 10%);
+}
+.year_collection div.main_blocks
+{
+    width: 55%;
+}
+.year_collection
+{
+    display: flex;
+    height: 600px;
+}
+.year_collection img
+{
+    width: 50%;
+}
+.year_collection button.season_collection_button
+{
+    width: 32%;
+    margin: 0;
+}
+.year_collection div hr
+{
+    margin: 40px 0;
+}
+.year_collection div p:not(.season_collection_text)
+{
+    width: 48%;
+    height: 200px;
+    font-family: PTSansRegular;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
 }
