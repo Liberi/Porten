@@ -29,11 +29,12 @@
    margin: 0;
    padding: 0;
 }
-main
+main,
+footer
 {
     background-color: black;
 }
-.hed_line
+.hed_foot_line
 {
     padding: 0 20%;
     color: rgba(150, 150, 150, 1);
@@ -162,6 +163,7 @@ main
 .season_collection_text
 {
     font-family: PlayfairDisplayRegular;
+    text-align: center;
     font-weight: 600;
     font-size: 36px;
     color: white;
@@ -170,13 +172,14 @@ main
 {
     margin: 50px 0;
 }
-.season_collection > div:first-of-type ul
+.watch_list
 {
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
-.season_collection > div:first-of-type ul li
+.watch_list li
 {
     margin: 0 25px;
 }
@@ -220,6 +223,7 @@ main
 {
     background: url("../img/fons/Rectangle_8.png") center center;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 45%;
     justify-content: flex-end;
 }
@@ -274,4 +278,68 @@ main
     font-weight: 400;
     color: white;
     text-align: center;
+}
+.new_goods p
+{
+    margin-top: 40px;
+}
+.new_goods_brands
+{
+    height: 1289px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20%;
+}
+.new_goods_brands .watch_list li
+{
+    margin: 0 0 40px 0;
+}
+.new_goods_brands hr
+{
+    margin: 40px 0 80px 0;
+}
+footer .new_goods_brands
+{
+    height: 362px;
+    background-color: rgba(15, 15, 15, 1);
+}
+footer .new_goods_brands div
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+footer .new_goods_brands hr
+{
+    margin: 40px 0;
+}
+.brands_img
+{
+    background: url("../img/icon/brands.png") center center;
+    background-repeat: no-repeat;
+    background-size: 85%;
+    height: 94px;
+    width: 40%;
+}
+.footer_compani
+{
+    background: url("../img/fons/Rectangle_15.png") center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+
+
+
+.footer_last_line
+{
+    height: 50px;
+}
+.footer_last_line a
+{
+    font-weight: 600;
+    color: rgba(150, 150, 150, 1);
 }
