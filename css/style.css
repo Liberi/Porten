@@ -16,24 +16,18 @@
     font-style: normal;
     font-weight: 400;
 }
-
 @font-face { 
     font-family: "PostNoBillsJaffna-Bold";
     src: url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Bold.ttf") format("truetype");
     font-style: bold;
     font-weight: 700;
 }
-
 * 
 {
    margin: 0;
    padding: 0;
 }
-main,
-footer
-{
-    background-color: black;
-}
+main, footer {background-color: black;}
 .hed_foot_line
 {
     padding: 0 20%;
@@ -48,26 +42,17 @@ footer
 .top_line
 {
     letter-spacing: 1px;
-    height: 44px;
-    background-color: rgba(0, 0, 0, 1);
+    height: 45px;
+    background-color: black;
 }
-.top_line p
-{
-    margin-left: 15px;
-}
-.top_line *
-{
-    height: 16px;
-}
+.top_line p {margin-left: 15px;}
+.top_line * {height: 16px;}
 .top_line p:first-of-type
 {
     flex-grow: 2;
     align-self: left;
 }
-.top_line p:last-of-type:hover
-{
-    text-decoration: underline;
-}
+.top_line p:last-of-type:hover {text-decoration: underline;}
 .second_line
 {
     height: 80px;
@@ -97,10 +82,7 @@ footer
     background-color: rgba(31, 31, 31, 1);
     color: white;
 }
-.second_line a.hed_img_link
-{
-    width: auto;
-}
+.second_line a.hed_img_link {width: auto;}
 .second_line img
 {
     height: 20px;
@@ -131,10 +113,7 @@ footer
     height: 320px;
     margin-bottom: 80px;
 }
-.first_screen div:hover
-{
-    background-size: 70%;
-}
+.first_screen div:hover {background-size: 70%;}
 .first_screen p 
 {
     width: 39%;
@@ -156,10 +135,7 @@ footer
     display: flex;
     height: 730px;
 }
-.season_collection > div:first-of-type
-{
-    width: 55%;
-}
+.season_collection > div:first-of-type {width: 55%;}
 .season_collection_text
 {
     font-family: PlayfairDisplayRegular;
@@ -168,10 +144,7 @@ footer
     font-size: 36px;
     color: white;
 }
-.season_collection > div:first-of-type hr
-{
-    margin: 50px 0;
-}
+.season_collection > div:first-of-type hr {margin: 50px 0;}
 .watch_list
 {
     display: flex;
@@ -179,10 +152,7 @@ footer
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.watch_list li
-{
-    margin: 0 25px;
-}
+.watch_list li {margin: 0 25px;}
 .watch_collection
 {
     font-family: PlayfairDisplayRegular;
@@ -192,7 +162,6 @@ footer
 }
 .watch_collection div
 {
-/*    width: 100%;*/
     height: 325px;
     display: flex;
     align-items: center;
@@ -202,13 +171,10 @@ footer
 .watch_collection div img
 {
     width: 80%;
-    transition: width 0.5s ease;
     height: 215px;
+    transition: width 0.5s ease;
 }
-.watch_collection div img:hover
-{
-    width: 85%;
-}
+.watch_collection div img:hover {width: 85%;}
 .watch_collection p:first-of-type
 {
     font-size: 18px;
@@ -216,8 +182,8 @@ footer
 }
 .watch_collection p:last-of-type
 {
-    margin-top: 15px;
     font-size: 16px;
+    margin-top: 15px;
 }
 .season_collection > div:last-of-type
 {
@@ -227,10 +193,7 @@ footer
     width: 45%;
     justify-content: flex-end;
 }
-.season_collection > div:last-of-type hr
-{
-    margin: 30px 0;
-}
+.season_collection > div:last-of-type hr {margin: 30px 0;}
 .season_collection_button
 {
     width: 138px;
@@ -243,32 +206,20 @@ footer
     letter-spacing: 1px;
     margin-bottom: 100px;
 }
-.season_collection_button:hover
-{
-    background: rgba(255, 255, 255, 10%);
-}
-.year_collection div.main_blocks
-{
-    width: 55%;
-}
+.season_collection_button:hover {background: rgba(255, 255, 255, 10%);}
+.year_collection div.main_blocks {width: 55%;}
 .year_collection
 {
     display: flex;
     height: 600px;
 }
-.year_collection img
-{
-    width: 50%;
-}
+.year_collection img {width: 50%;}
 .year_collection button.season_collection_button
 {
     width: 32%;
     margin: 0;
 }
-.year_collection div hr
-{
-    margin: 40px 0;
-}
+.year_collection div hr {margin: 40px 0;}
 .year_collection div p:not(.season_collection_text)
 {
     width: 48%;
@@ -279,10 +230,7 @@ footer
     color: white;
     text-align: center;
 }
-.new_goods p
-{
-    margin-top: 40px;
-}
+.new_goods p {margin-top: 40px;}
 .new_goods_brands
 {
     height: 1289px;
@@ -292,14 +240,8 @@ footer
     justify-content: center;
     padding: 0 20%;
 }
-.new_goods_brands .watch_list li
-{
-    margin: 0 0 40px 0;
-}
-.new_goods_brands hr
-{
-    margin: 40px 0 80px 0;
-}
+.new_goods_brands .watch_list li {margin: 0 0 40px 0;}
+.new_goods_brands hr {margin: 40px 0 80px 0;}
 footer .new_goods_brands
 {
     height: 362px;
@@ -311,10 +253,7 @@ footer .new_goods_brands div
     display: flex;
     justify-content: space-between;
 }
-footer .new_goods_brands hr
-{
-    margin: 40px 0;
-}
+footer .new_goods_brands hr {margin: 40px 0;}
 .brands_img
 {
     background: url("../img/icon/brands.png") center center;
@@ -325,21 +264,71 @@ footer .new_goods_brands hr
 }
 .footer_compani
 {
+    font-family: PTSansRegular;
+    color: white;
+    font-size: 14px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20%;
     background: url("../img/fons/Rectangle_15.png") center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
 }
-
-
-
-
+.footer_compani p.season_collection_text
+{
+    font-weight: 300;
+    font-size: 24px;
+}
+.footer_compani div,
+.footer_compani form
+{
+    width: 32%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+.footer_compani > div
+{
+    align-content: space-between;
+}
+.footer_compani div div,
+.footer_compani form
+{
+    height: 147px;
+    width: 100%;
+    justify-self: flex-end;
+}
+.footer_compani form input,
+.footer_compani button
+{
+    font-family: PTSansRegular;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    background: black;
+}
+.footer_compani button
+{
+    margin-right: 20px;
+}
+.footer_compani input::placeholder
+{
+    color: rgba(156, 156, 156, 1);
+}
+.footer_compani #email
+{
+    background: rgba(255, 255, 255, 0.4);
+}
 .footer_last_line
 {
-    height: 50px;
+    height: 50px; 
+    color: rgba(208, 208, 208, 1);
 }
 .footer_last_line a
 {
     font-weight: 600;
-    color: rgba(150, 150, 150, 1);
+    color: rgba(208, 208, 208, 1);
 }
