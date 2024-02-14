@@ -3,5 +3,9 @@
 > [!TIP]
 > Проект тренировочной (для обучения) разработки сайта компании Porten.
 
+## **Макет**
 ![portenHed](https://github.com/Liberi/Porten/assets/130091860/0f5b0f4e-f857-469b-a5f6-4b120f84d3b8)
+
+## **Итоговый результат**
+![opera_7OI3klGUsY](https://github.com/Liberi/Porten/assets/130091860/7b66076f-19ec-4ffa-8163-bd8a7cf13177)
 
